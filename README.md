@@ -64,49 +64,7 @@ Before running this project, make sure you have:
    npm install
    ```
 
-3. **Set up environment variables**
-   
-   Create a `.env.local` file in the root directory:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_project_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-
-   You can find these values in your Supabase project dashboard under Settings > API.
-
-4. **Set up the database**
-   
-   Run this SQL in your Supabase SQL editor to create the employees table:
-   ```sql
-   -- Create employees table
-   CREATE TABLE employees (
-     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-     employee_id TEXT UNIQUE NOT NULL,
-     name TEXT NOT NULL,
-     email TEXT UNIQUE NOT NULL,
-     position TEXT NOT NULL,
-     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   -- Enable Row Level Security
-   ALTER TABLE employees ENABLE ROW LEVEL SECURITY;
-
-   -- Create policies for authenticated users
-   CREATE POLICY "Users can view all employees" ON employees
-     FOR SELECT USING (auth.role() = 'authenticated');
-
-   CREATE POLICY "Users can insert employees" ON employees
-     FOR INSERT WITH CHECK (auth.role() = 'authenticated');
-
-   CREATE POLICY "Users can update employees" ON employees
-     FOR UPDATE USING (auth.role() = 'authenticated');
-
-   CREATE POLICY "Users can delete employees" ON employees
-     FOR DELETE USING (auth.role() = 'authenticated');
-   ```
-
-5. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
    ```
@@ -119,7 +77,7 @@ Before running this project, make sure you have:
 
 1. **Create Google OAuth App**
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
-   - Create a new project or select existing one
+   - Create a new project or select an existing one
    - Enable Google+ API
    - Create OAuth 2.0 credentials
    - Add authorized redirect URIs:
