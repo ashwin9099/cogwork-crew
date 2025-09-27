@@ -1,14 +1,11 @@
 # 🏢 Verto Employee Management System
-
 A modern, full-stack employee management application built with React, TypeScript, and Supabase. This system provides comprehensive CRUD operations for managing employee data with a beautiful, responsive UI and robust authentication.
 
 ### ✨ Key Features
-
 - **🔐 Secure Authentication** - Google & GitHub OAuth integration via Supabase
 - **👥 Employee Management** - Complete CRUD operations (Create, Read, Update, Delete)
 - **🔍 Advanced Search** - Real-time filtering by name, ID, email, or position
 - **📱 Responsive Design** - Works seamlessly on desktop, tablet, and mobile
-- **🎨 Modern UI** - Built with shadcn/ui components and Tailwind CSS
 - **⚡ Real-time Updates** - Instant data synchronization across sessions
 - **🧪 Comprehensive Testing** - Full test coverage for components and business logic
 - **🚀 Type Safety** - Built with TypeScript for enhanced developer experience
