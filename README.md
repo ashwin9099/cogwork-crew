@@ -64,7 +64,7 @@ Before running this project, make sure you have:
    npm run dev
    ```
 
-   The application will be available at `http://localhost:5173`
+   The application will be available at `http://localhost:8081`
 
 ## 🔐 Authentication Setup
 
