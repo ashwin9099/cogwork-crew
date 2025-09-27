@@ -10,7 +10,7 @@ A modern, full-stack employee management application built with React, TypeScrip
 - **🧪 Comprehensive Testing** - Full test coverage for components and business logic
 - **🚀 Type Safety** - Built with TypeScript for enhanced developer experience
 
-- ## 🎥 Video Demo
+## 🎥 Video Demo
 
 **📹 Demo Video**: https://youtu.be/K3U9Zf1HPk8
  
