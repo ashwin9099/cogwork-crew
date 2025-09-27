@@ -15,7 +15,7 @@ A modern, full-stack employee management application built with React, TypeScrip
 
 - ## 🎥 Video Demo
 
-> **📹 Demo Video**: [Add your video link here]
+**📹 Demo Video**: https://youtu.be/K3U9Zf1HPk8
  
 > The demo video showcases:
 > - Authentication flow (Google/GitHub login)
