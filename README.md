@@ -45,7 +45,6 @@ Before running this project, make sure you have:
 - **Node.js** (v18 or higher)
 - **npm** or **yarn** package manager
 - **Git** for version control
-- A **Supabase account** (free tier available)
 
 ### 📦 Installation
 
