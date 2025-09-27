@@ -13,6 +13,17 @@ A modern, full-stack employee management application built with React, TypeScrip
 - **🧪 Comprehensive Testing** - Full test coverage for components and business logic
 - **🚀 Type Safety** - Built with TypeScript for enhanced developer experience
 
+- ## 🎥 Video Demo
+
+> **📹 Demo Video**: [Add your video link here]
+> 
+> The demo video showcases:
+> - Authentication flow (Google/GitHub login)
+> - Employee CRUD operations
+> - Search and filtering functionality
+> - Responsive design on different screen sizes
+> - Error handling and validation
+
 ## 🛠️ Technology Stack
 
 ### Frontend
@@ -207,18 +218,7 @@ src/
 4. **Real-time Updates**: Users expect immediate data synchronization
 5. **Modern Browsers**: Targeting ES2020+ browser support
 6. **Internet Connection**: Application requires internet connectivity
-
-## 🎥 Video Demo
-
-> **📹 Demo Video**: [Add your video link here]
-> 
-> The demo video showcases:
-> - Authentication flow (Google/GitHub login)
-> - Employee CRUD operations
-> - Search and filtering functionality
-> - Responsive design on different screen sizes
-> - Error handling and validation
-
+   
 ## 🚀 Deployment
 
 ### Build for Production
