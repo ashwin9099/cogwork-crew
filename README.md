@@ -2,10 +2,6 @@
 
 A modern, full-stack employee management application built with React, TypeScript, and Supabase. This system provides comprehensive CRUD operations for managing employee data with a beautiful, responsive UI and robust authentication.
 
-## 📋 Project Overview
-
-The Verto Employee Management System is a professional-grade web application designed to streamline employee data management. It features a clean, modern interface with real-time data synchronization, secure authentication, and comprehensive testing coverage.
-
 ### ✨ Key Features
 
 - **🔐 Secure Authentication** - Google & GitHub OAuth integration via Supabase
@@ -123,39 +119,18 @@ src/test/
 
 ### Running Tests
 
-**Run all tests:**
-```bash
-npm test
-```
-
-**Run tests in watch mode:**
-```bash
-npm test -- --watch
-```
-
-**Run tests with UI (interactive):**
-```bash
-npm run test:ui
-```
-
-**Run tests with coverage report:**
-```bash
-npm run test:coverage
-```
-
 **Run specific test files:**
 ```bash
-# Component tests
-npm test -- src/test/components/EmployeeTable.test.tsx
 
 # Hook tests
-npm test -- src/test/hooks/useEmployees.test.ts
+npm test -- src/test/hooks/useEmployees.fixed.test.ts\
+
+# Component tests
+npm test -- src/test/components/EmployeeTable.test.tsx
 
 # Business logic tests
 npm test -- src/test/business/employee-validation.test.ts
 
-# Authentication tests
-npm test -- src/test/auth/AuthProvider.test.tsx
 ```
 
 ### Test Coverage
@@ -240,11 +215,11 @@ src/
 1. Users land on the login page (`/auth`)
 2. Choose between Google, GitHub, or email authentication
 3. Successful login redirects to employee management (`/employees`)
-4. Sign out returns to login page
+4. Sign out returns to the login page
 
 ### 👥 Employee Management
 1. **View Employees**: See all employees in a responsive table
-2. **Add Employee**: Click "Add Employee" to open creation form
+2. **Add Employee**: Click "Add Employee" to open the creation form
 3. **Edit Employee**: Click edit icon to modify employee details
 4. **Delete Employee**: Click delete icon with confirmation dialog
 5. **Search**: Real-time filtering by any employee field
@@ -294,10 +269,6 @@ VITE_SUPABASE_ANON_KEY=your_production_supabase_anon_key
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - **Supabase** - For the excellent backend-as-a-service platform
@@ -308,6 +279,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by [Your Name]**
+**Built with ❤️ by Ashwin Nachiket Kulkarni**
 
-For questions or support, please open an issue or contact [your-email@example.com]
+For questions or support, please open an issue or contact ankulkarni731@gmail.com
