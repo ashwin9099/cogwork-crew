@@ -79,7 +79,7 @@ export function EmployeeTable() {
             <div className="p-3 rounded-full bg-primary/10 backdrop-blur-sm">
               <Building2 className="h-8 w-8 text-primary" />
             </div>
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
               Verto Employee Management
             </h1>
           </div>
@@ -92,8 +92,8 @@ export function EmployeeTable() {
         <Card className="backdrop-blur-sm bg-card/80 border-border/50 shadow-lg">
           <CardContent className="p-6">
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <span>Welcome, {user?.email}</span>
+              <div className="flex items-center gap-4 text-md text-muted-foreground">
+                <span>Welcome, {user?.email} 🙋‍♂️</span>
                 <Button
   variant="outline"
   size="sm"
