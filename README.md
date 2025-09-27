@@ -2,10 +2,6 @@
 
 A modern, full-stack employee management application built with React, TypeScript, and Supabase. This system provides comprehensive CRUD operations for managing employee data with a beautiful, responsive UI and robust authentication.
 
-## 📋 Project Overview
-
-The Verto Employee Management System is a professional-grade web application designed to streamline employee data management. It features a clean, modern interface with real-time data synchronization, secure authentication, and comprehensive testing coverage.
-
 ### ✨ Key Features
 
 - **🔐 Secure Authentication** - Google & GitHub OAuth integration via Supabase
@@ -49,7 +45,6 @@ Before running this project, make sure you have:
 - **Node.js** (v18 or higher)
 - **npm** or **yarn** package manager
 - **Git** for version control
-- A **Supabase account** (free tier available)
 
 ### 📦 Installation
 
@@ -64,49 +59,7 @@ Before running this project, make sure you have:
    npm install
    ```
 
-3. **Set up environment variables**
-   
-   Create a `.env.local` file in the root directory:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_project_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-
-   You can find these values in your Supabase project dashboard under Settings > API.
-
-4. **Set up the database**
-   
-   Run this SQL in your Supabase SQL editor to create the employees table:
-   ```sql
-   -- Create employees table
-   CREATE TABLE employees (
-     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-     employee_id TEXT UNIQUE NOT NULL,
-     name TEXT NOT NULL,
-     email TEXT UNIQUE NOT NULL,
-     position TEXT NOT NULL,
-     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-   );
-
-   -- Enable Row Level Security
-   ALTER TABLE employees ENABLE ROW LEVEL SECURITY;
-
-   -- Create policies for authenticated users
-   CREATE POLICY "Users can view all employees" ON employees
-     FOR SELECT USING (auth.role() = 'authenticated');
-
-   CREATE POLICY "Users can insert employees" ON employees
-     FOR INSERT WITH CHECK (auth.role() = 'authenticated');
-
-   CREATE POLICY "Users can update employees" ON employees
-     FOR UPDATE USING (auth.role() = 'authenticated');
-
-   CREATE POLICY "Users can delete employees" ON employees
-     FOR DELETE USING (auth.role() = 'authenticated');
-   ```
-
-5. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
    ```
@@ -119,7 +72,7 @@ Before running this project, make sure you have:
 
 1. **Create Google OAuth App**
    - Go to [Google Cloud Console](https://console.cloud.google.com/)
-   - Create a new project or select existing one
+   - Create a new project or select an existing one
    - Enable Google+ API
    - Create OAuth 2.0 credentials
    - Add authorized redirect URIs:
@@ -165,39 +118,18 @@ src/test/
 
 ### Running Tests
 
-**Run all tests:**
-```bash
-npm test
-```
-
-**Run tests in watch mode:**
-```bash
-npm test -- --watch
-```
-
-**Run tests with UI (interactive):**
-```bash
-npm run test:ui
-```
-
-**Run tests with coverage report:**
-```bash
-npm run test:coverage
-```
-
 **Run specific test files:**
 ```bash
-# Component tests
-npm test -- src/test/components/EmployeeTable.test.tsx
 
 # Hook tests
-npm test -- src/test/hooks/useEmployees.test.ts
+npm test -- src/test/hooks/useEmployees.fixed.test.ts\
+
+# Component tests
+npm test -- src/test/components/EmployeeTable.test.tsx
 
 # Business logic tests
 npm test -- src/test/business/employee-validation.test.ts
 
-# Authentication tests
-npm test -- src/test/auth/AuthProvider.test.tsx
 ```
 
 ### Test Coverage
@@ -276,26 +208,6 @@ src/
 5. **Modern Browsers**: Targeting ES2020+ browser support
 6. **Internet Connection**: Application requires internet connectivity
 
-## 📱 Features Walkthrough
-
-### 🔐 Authentication Flow
-1. Users land on the login page (`/auth`)
-2. Choose between Google, GitHub, or email authentication
-3. Successful login redirects to employee management (`/employees`)
-4. Sign out returns to login page
-
-### 👥 Employee Management
-1. **View Employees**: See all employees in a responsive table
-2. **Add Employee**: Click "Add Employee" to open creation form
-3. **Edit Employee**: Click edit icon to modify employee details
-4. **Delete Employee**: Click delete icon with confirmation dialog
-5. **Search**: Real-time filtering by any employee field
-
-### 🔍 Search & Filter
-- **Real-time Search**: Filter as you type
-- **Multi-field Search**: Search by name, ID, email, or position
-- **Clear Search**: Easy search reset functionality
-
 ## 🎥 Video Demo
 
 > **📹 Demo Video**: [Add your video link here]
@@ -336,10 +248,6 @@ VITE_SUPABASE_ANON_KEY=your_production_supabase_anon_key
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - **Supabase** - For the excellent backend-as-a-service platform
@@ -350,6 +258,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by [Your Name]**
+**Built with ❤️ by Ashwin Nachiket Kulkarni**
 
-For questions or support, please open an issue or contact [your-email@example.com]
+For questions or support, please open an issue or contact 
+📨 ankulkarni731@gmail.com
+📞 +91-7709034922
