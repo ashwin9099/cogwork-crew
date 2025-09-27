@@ -208,26 +208,6 @@ src/
 5. **Modern Browsers**: Targeting ES2020+ browser support
 6. **Internet Connection**: Application requires internet connectivity
 
-## 📱 Features Walkthrough
-
-### 🔐 Authentication Flow
-1. Users land on the login page (`/auth`)
-2. Choose between Google, GitHub, or email authentication
-3. Successful login redirects to employee management (`/employees`)
-4. Sign out returns to the login page
-
-### 👥 Employee Management
-1. **View Employees**: See all employees in a responsive table
-2. **Add Employee**: Click "Add Employee" to open the creation form
-3. **Edit Employee**: Click edit icon to modify employee details
-4. **Delete Employee**: Click delete icon with confirmation dialog
-5. **Search**: Real-time filtering by any employee field
-
-### 🔍 Search & Filter
-- **Real-time Search**: Filter as you type
-- **Multi-field Search**: Search by name, ID, email, or position
-- **Clear Search**: Easy search reset functionality
-
 ## 🎥 Video Demo
 
 > **📹 Demo Video**: [Add your video link here]
@@ -280,4 +260,6 @@ VITE_SUPABASE_ANON_KEY=your_production_supabase_anon_key
 
 **Built with ❤️ by Ashwin Nachiket Kulkarni**
 
-For questions or support, please open an issue or contact ankulkarni731@gmail.com
+For questions or support, please open an issue or contact 
+📨 ankulkarni731@gmail.com
+📞 +91-7709034922
