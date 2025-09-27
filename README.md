@@ -206,24 +206,13 @@ src/
 - **Integration Tests**: Full user flow testing
 - **Mocking**: Supabase client mocking for reliable tests
 - **Coverage**: Comprehensive test coverage for critical paths
-
-### Assumptions Made
-
-1. **User Authentication**: All users must be authenticated to access the system
-2. **Employee Data**: Basic employee information is sufficient (name, ID, email, position)
-3. **Single Tenant**: All authenticated users can see all employees
-4. **Real-time Updates**: Users expect immediate data synchronization
-5. **Modern Browsers**: Targeting ES2020+ browser support
-6. **Internet Connection**: Application requires internet connectivity
    
 ## 🚀 Deployment
 
 ### Build for Production
-
 ```bash
 npm run build
 ```
-
 ### Deploy to Netlify/Vercel
 
 1. **Build Command**: `npm run build`
@@ -244,14 +233,6 @@ VITE_SUPABASE_ANON_KEY=your_production_supabase_anon_key
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 🙏 Acknowledgments
-
-- **Supabase** - For the excellent backend-as-a-service platform
-- **shadcn/ui** - For the beautiful, accessible UI components
-- **Tailwind CSS** - For the utility-first CSS framework
-- **React Query** - For excellent server state management
-- **Vitest** - For the fast and reliable testing framework
 
 ---
 
