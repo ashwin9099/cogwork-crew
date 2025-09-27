@@ -59,7 +59,7 @@ Before running this project, make sure you have:
 1. **Clone the repository**
    ```bash
    git clone <your-repository-url>
-   cd cogwork-crew
+   cd verto-employee
    ```
 
 2. **Install dependencies**
